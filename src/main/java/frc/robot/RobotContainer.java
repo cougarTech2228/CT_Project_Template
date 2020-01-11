@@ -7,6 +7,8 @@
 
 package frc.robot;
 
+import com.revrobotics.CANSparkMax;
+
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.XboxController;
 
@@ -27,6 +29,7 @@ public class RobotContainer {
 
   // Robot Subsystems
   private final static Drivebase m_driveBase = new Drivebase();
+  private final static Neo m_neo = new Neo();
 
   // Robot Commands
   private final static SampleCommand m_sampleCommand = new SampleCommand(/*m_subSystem*/);
@@ -71,5 +74,9 @@ public class RobotContainer {
   // Subsystem Getters
   public static Drivebase getDrivebase() {
     return m_driveBase;
+  }
+
+  public static Neo getNeo() {
+    return m_neo;
   }
 }

@@ -59,7 +59,7 @@ public class Drivebase extends SubsystemBase {
 
         //System.out.println("fwdRevValue = " + fwdRevValue + " turnValue = " + turnValue);
 
-        m_differentialDrive.arcadeDrive(fwdRevValue, turnValue); 
+        m_differentialDrive.arcadeDrive(fwdRevValue, -turnValue); 
     }
 
     // Put methods for controlling this subsystem

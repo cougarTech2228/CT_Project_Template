@@ -57,6 +57,8 @@ public final class Constants {
         public static final int LEFT_FRONT_MOTOR_CAN_ID = 13;
         public static final int LEFT_REAR_MOTOR_CAN_ID = 14;
 
+        public static final int NEO_SPARK_MAX_CAN_ID = 6;
+
         public static final int PIGEON_IMU_CAN_ID = 61;
         public static final int CANIFIER_CAN_ID = 62;
 
