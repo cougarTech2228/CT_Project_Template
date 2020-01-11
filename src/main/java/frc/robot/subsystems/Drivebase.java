@@ -38,7 +38,7 @@ public class Drivebase extends SubsystemBase {
         m_leftSpeedControllerGroup = new SpeedControllerGroup(m_frontLeftTalonSRX, m_rearLeftTalonSRX);
         m_rightSpeedControllerGroup = new SpeedControllerGroup(m_frontRightTalonSRX, m_rearRightTalonSRX);
 
-        m_differentialDrive = new DifferentialDrive(m_rightSpeedControllerGroup, m_leftSpeedControllerGroup);
+        m_differentialDrive = new DifferentialDrive(m_leftSpeedControllerGroup, m_rightSpeedControllerGroup);
 
         m_differentialDrive.setSafetyEnabled(true);
         m_differentialDrive.setExpiration(0.1);
